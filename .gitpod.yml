@@ -18,6 +18,10 @@ github:
 # Command to start on workspace startup (optional)
 tasks:
   - init: cargo install clarinet
+    - command: clarinet fork myProject $id && cd myProject && clarinet console
+      name: Clarinet Console
+    - openMode: split-right
+
 vscode:
   extensions:
     - lgalabru.clarity-lsp@0.4.0:3b7c1d66d577e444c91076dd990c658f
