@@ -17,9 +17,8 @@ github:
 
 # Command to start on workspace startup (optional)
 tasks:
-  - prebuild: cargo install clarinet
-    init: clarinet fork myProject $id
-    command: cd myProject && clarinet console
+  - init: cargo install clarinet
+    command: clarinet fork myProject $id && cd myProject && clarinet console
 
 vscode:
   extensions:
