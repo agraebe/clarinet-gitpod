@@ -19,8 +19,6 @@ github:
 tasks:
   - init: cargo install clarinet
     command: clarinet fork myProject $id && cd myProject && clarinet console
-      name: Clarinet Console
-    - openMode: split-right
 
 vscode:
   extensions:
