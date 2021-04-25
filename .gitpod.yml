@@ -18,7 +18,7 @@ github:
 # Command to start on workspace startup (optional)
 tasks:
   - init: cargo install clarinet
-    - command: clarinet fork myProject $id && cd myProject && clarinet console
+    command: clarinet fork myProject $id && cd myProject && clarinet console
       name: Clarinet Console
     - openMode: split-right
 
